@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <div class="search-history" id="searchHistory">
+            <h2>Search History</h2>
+            <ul id="searchHistoryList"></ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Weather App</h1>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchBtn">Search</button>
+        <div id="loading" style="display: none;">Loading...</div>
+        <div id="weatherResult"></div>
+        <h2>5-Day Forecast</h2>
+        <div id="forecastResult" class="forecast-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

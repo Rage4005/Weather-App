@@ -1,0 +1,197 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://wallpaperaccess.com/full/7284828.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #F0F0F0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Menu styles */
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.search-history {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search-history h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.search-history ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.search-history li {
+    background-color: #444;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Container styles */
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Title styles */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #F0F0F0;
+}
+
+/* Input styles */
+input {
+    padding: 10px;
+    width: calc(100% - 24px);
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button styles */
+button {
+    padding: 10px;
+    width: calc(100% - 24px);
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Loading indicator */
+#loading {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #F0F0F0;
+}
+
+/* Weather result */
+#weatherResult {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #F0F0F0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#weatherResult h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #F0F0F0;
+}
+
+#weatherResult p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #F0F0F0;
+}
+
+/* Forecast result */
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.forecast-item {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    min-width: 100px;
+    text-align: center;
+    color: #F0F0F0;
+}
+
+.forecast-item:last-child {
+    margin-right: 0;
+}
+
+.forecast-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.forecast-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        width: calc(100% - 20px);
+        font-size: 0.9rem;
+    }
+
+    #weatherResult h2 {
+        font-size: 1.2rem;
+    }
+
+    #weatherResult p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
